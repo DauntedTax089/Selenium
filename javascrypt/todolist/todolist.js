@@ -1,5 +1,6 @@
-const {Builder, Key, By} = require ("selenium-webdriver")
-const assert = require ("assert")
+const {Builder, Key, By} = require ("selenium-webdriver");
+const assert = require ("assert");
+var should = require ("chai").should();
 
 async function todolist() {
 
@@ -16,7 +17,12 @@ async function todolist() {
     let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function(value){
         return value
     });
-    assert.strictEqual(seleniumText, "Aprender Selenium");
+
+    /*Assertion Node Puro 
+    assert.strictEqual(seleniumText, "Aprender Selenium");*/
+
+    //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
+    seleniumText.should.equal("Aprender Selenium")
 
     //Fechar o navegador
     await driver.close();
