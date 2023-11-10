@@ -4,7 +4,7 @@
   "description": "Aqui vão ficar meus projetos de automação de testes com a ferramenta selenium;",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "--no-timeouts --parallel"
   },
   "keywords": [],
   "author": "",
