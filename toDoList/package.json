@@ -1,10 +1,13 @@
 {
-  "name": "selenium",
+  "name": "todolist",
   "version": "1.0.0",
-  "description": "Aqui vão ficar meus projetos de automação de testes com a ferramenta selenium;",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "--no-timeouts --parallel --reporter mochawesome --require mochawesome/register"
+    "test": "mocha --no-timeouts --parallel --reporter mochawesome --require mochawesome/register"
   },
   "keywords": [],
   "author": "",

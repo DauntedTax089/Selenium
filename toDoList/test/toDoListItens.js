@@ -5,7 +5,7 @@ var should = require("chai").should();
 describe("Selenium", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou Selenium com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -33,7 +33,7 @@ describe("Selenium", function () {
 describe("Cypress", function () {
 
     //it Block
-    it("Adicionou a segunda tarefa com sucesso", async function () {
+    it("Adicionou Cypress com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -41,15 +41,15 @@ describe("Cypress", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("Cypress", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let cypressText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        cypressText.should.equal("Cypress")
 
         //Fechar o navegador
         await driver.close();
@@ -61,7 +61,7 @@ describe("Cypress", function () {
 describe("JavaScrypt", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou JavaScrypt com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -69,15 +69,15 @@ describe("JavaScrypt", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("JavaScrypt", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let javascryptText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        javascryptText.should.equal("JavaScrypt")
 
         //Fechar o navegador
         await driver.close();
@@ -89,7 +89,7 @@ describe("JavaScrypt", function () {
 describe("Java", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou Java com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -97,15 +97,15 @@ describe("Java", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("Java", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let JavaText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        JavaText.should.equal("Java")
 
         //Fechar o navegador
         await driver.close();
@@ -117,7 +117,7 @@ describe("Java", function () {
 describe("HTML5", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou HTML5 com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -125,15 +125,15 @@ describe("HTML5", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys(" HTML5", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let HTML5Text = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        HTML5Text.should.equal("HTML5")
 
         //Fechar o navegador
         await driver.close();
@@ -145,7 +145,7 @@ describe("HTML5", function () {
 describe("CSS3", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou CSS3 com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -153,15 +153,15 @@ describe("CSS3", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("CSS3", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let CSS3Text = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        CSS3Text.should.equal("CSS3")
 
         //Fechar o navegador
         await driver.close();
@@ -173,7 +173,7 @@ describe("CSS3", function () {
 describe("Git e GitHub", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou Git e GitHub com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -181,15 +181,15 @@ describe("Git e GitHub", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("Git e GitHub", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let gitText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        gitText.should.equal("Git e GitHub")
 
         //Fechar o navegador
         await driver.close();
@@ -201,7 +201,7 @@ describe("Git e GitHub", function () {
 describe("Jira", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou Jira com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -209,15 +209,15 @@ describe("Jira", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("Jira", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let JiraText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        JiraText.should.equal("Jira")
 
         //Fechar o navegador
         await driver.close();
@@ -229,7 +229,7 @@ describe("Jira", function () {
 describe("Selenium com Java", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou Selenium com Java com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -237,15 +237,15 @@ describe("Selenium com Java", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("Selenium com Java", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let seleniumjavaText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        seleniumjavaText.should.equal("Selenium com Java")
 
         //Fechar o navegador
         await driver.close();
@@ -257,7 +257,7 @@ describe("Selenium com Java", function () {
 describe("API", function () {
 
     //it Block
-    it("Adicionou a primeira tarefa com sucesso", async function () {
+    it("Adicionou API com sucesso", async function () {
         //Abrir o navegador;
         let driver = await new Builder().forBrowser("chrome").build(); //Pedir para o código construir um driver do navegador escolhido;
 
@@ -265,15 +265,15 @@ describe("API", function () {
         await driver.get("https://lambdatest.github.io/sample-todo-app/");
 
         //Adicionar uma tarefa;
-        await driver.findElement(By.id("sampletodotext")).sendKeys("Aprender Selenium", Key.RETURN);
+        await driver.findElement(By.id("sampletodotext")).sendKeys("API", Key.RETURN);
 
         //Assertion - Verificar se adicionou a tarefa requisitada;
-        let seleniumText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
+        let apiText = await driver.findElement(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText().then(function (value) {
             return value
         });
 
         //Assertion Chai Should - Verificar se adicionou a tarefa requisitada;
-        seleniumText.should.equal("Aprender Selenium")
+        apiText.should.equal("API")
 
         //Fechar o navegador
         await driver.close();
