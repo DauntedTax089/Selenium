@@ -238,4 +238,107 @@ describe("loginFunctionality", function () {
         await driver.quit();
     })
 
+    //it block
+    it("Login com espaço antes de username", async function () {
+
+        //Construir o driver para o navegador
+        let driver = await new Builder().forBrowser("chrome").build();
+
+        //Acessar site
+        await driver.get("https://www.saucedemo.com/");
+
+        //Inserir nome de usuário: " standard_user"
+        await driver.findElement(By.id("user-name")).sendKeys(" standard_user");
+
+        //Inserir password: "secret_sauce"
+        await driver.findElement(By.id("password")).sendKeys("secret_sauce");
+
+        //Clicar no botão login;
+        await driver.findElement(By.id("login-button")).click();
+
+        //Assertion - Verificar se o login não foi realizado
+        let userinvalidText = await driver.findElement(By.xpath("/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3")).getText().then(function (value) { return value })
+        userinvalidText.should.equal("Epic sadface: Username and password do not match any user in this service")
+
+        //Fechar o navegador
+        await driver.quit();
+    })
+
+    //it block
+    it("Login com espaço depois de username", async function () {
+
+        //Construir o driver para o navegador
+        let driver = await new Builder().forBrowser("chrome").build();
+
+        //Acessar site
+        await driver.get("https://www.saucedemo.com/");
+
+        //Inserir nome de usuário: "standard_user "
+        await driver.findElement(By.id("user-name")).sendKeys("standard_user ");
+
+        //Inserir password: "secret_sauce"
+        await driver.findElement(By.id("password")).sendKeys("secret_sauce");
+
+        //Clicar no botão login;
+        await driver.findElement(By.id("login-button")).click();
+
+        //Assertion - Verificar se o login não foi realizado
+        let userinvalidText = await driver.findElement(By.xpath("/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3")).getText().then(function (value) { return value })
+        userinvalidText.should.equal("Epic sadface: Username and password do not match any user in this service")
+
+        //Fechar o navegador
+        await driver.quit();
+    })
+
+    //it block
+    it("Login com espaço antes de password", async function () {
+
+        //Construir o driver para o navegador
+        let driver = await new Builder().forBrowser("chrome").build();
+
+        //Acessar site
+        await driver.get("https://www.saucedemo.com/");
+
+        //Inserir nome de usuário: "standard_user"
+        await driver.findElement(By.id("user-name")).sendKeys("standard_user");
+
+        //Inserir password: " secret_sauce"
+        await driver.findElement(By.id("password")).sendKeys(" secret_sauce");
+
+        //Clicar no botão login;
+        await driver.findElement(By.id("login-button")).click();
+
+        //Assertion - Verificar se o login não foi realizado
+        let userinvalidText = await driver.findElement(By.xpath("/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3")).getText().then(function (value) { return value })
+        userinvalidText.should.equal("Epic sadface: Username and password do not match any user in this service")
+
+        //Fechar o navegador
+        await driver.quit();
+    })
+
+    //it block
+    it("Login com espaço depois de password", async function () {
+
+        //Construir o driver para o navegador
+        let driver = await new Builder().forBrowser("chrome").build();
+
+        //Acessar site
+        await driver.get("https://www.saucedemo.com/");
+
+        //Inserir nome de usuário: "standard_user"
+        await driver.findElement(By.id("user-name")).sendKeys("standard_user");
+
+        //Inserir password: "secret_sauce "
+        await driver.findElement(By.id("password")).sendKeys("secret_sauce ");
+
+        //Clicar no botão login;
+        await driver.findElement(By.id("login-button")).click();
+
+        //Assertion - Verificar se o login não foi realizado
+        let userinvalidText = await driver.findElement(By.xpath("/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3")).getText().then(function (value) { return value })
+        userinvalidText.should.equal("Epic sadface: Username and password do not match any user in this service")
+
+        //Fechar o navegador
+        await driver.quit();
+    })
 })
