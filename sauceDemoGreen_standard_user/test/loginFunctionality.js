@@ -5,7 +5,7 @@ var should = require("chai").should();
 describe("loginFunctionality", function () {
 
     //it block
-    it("Login com sucesso", async function () {
+    it("TC01_loginSuccessfully", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -31,7 +31,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com username inválido", async function () {
+    it("TC02_invalidUsername", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -57,7 +57,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com password inválido", async function () {
+    it("TC03_invalidPassword", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -83,7 +83,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com credenciais trocadas", async function () {
+    it("TC04_changedCredentials", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -109,7 +109,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com username MAIÚSCULO", async function () {
+    it("TC05_capitalUsername", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -135,7 +135,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com password MAIÚSCULO", async function () {
+    it("TC06_capitalPassword", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -161,7 +161,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login sem username", async function () {
+    it("TC07_withoutUsername", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -187,7 +187,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login sem password", async function () {
+    it("TC08_withoutPassword", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -213,7 +213,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login sem credenciais", async function () {
+    it("TC09_withoutCredentials", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -239,7 +239,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com espaço antes de username", async function () {
+    it("TC10_backspaceBeforeUsername", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -265,7 +265,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com espaço depois de username", async function () {
+    it("TC11_backspaceAfterUsername", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -291,7 +291,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com espaço antes de password", async function () {
+    it("TC12_backspaceBeforePassword", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
@@ -317,7 +317,7 @@ describe("loginFunctionality", function () {
     })
 
     //it block
-    it("Login com espaço depois de password", async function () {
+    it("TC13_backspaceAfterPassword", async function () {
 
         //Construir o driver para o navegador
         let driver = await new Builder().forBrowser("chrome").build();
